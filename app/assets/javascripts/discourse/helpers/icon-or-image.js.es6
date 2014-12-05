@@ -1,4 +1,4 @@
-export default Ember.Handlebars.makeBoundHelper(function(str) {
+export default Ember.HTMLBars.makeBoundHelper(function(str) {
   if (Em.empty(str)) { return ""; }
 
   if (str.indexOf('fa-') === 0) {

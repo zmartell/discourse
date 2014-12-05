@@ -6,7 +6,7 @@ var safe = Handlebars.SafeString;
   @method bound-avatar
   @for Handlebars
 **/
-Em.Handlebars.helper('bound-avatar', function(user, size, uploadId) {
+Ember.HTMLBars.helper('bound-avatar', function(user, size, uploadId) {
   if (Em.isEmpty(user)) {
     return new safe("<div class='avatar-placeholder'></div>");
   }
@@ -27,7 +27,7 @@ Em.Handlebars.helper('bound-avatar', function(user, size, uploadId) {
 /*
  * Used when we only have a template
  */
-Em.Handlebars.helper('bound-avatar-template', function(avatarTemplate, size) {
+Ember.HTMLBars.helper('bound-avatar-template', function(avatarTemplate, size) {
   return new safe(Discourse.Utilities.avatarImg({
     size: size,
     avatarTemplate: avatarTemplate

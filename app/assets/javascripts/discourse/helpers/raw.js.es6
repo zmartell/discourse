@@ -1,4 +1,5 @@
 Handlebars.registerHelper('raw', function(property, options) {
+  return;
   var templateName = property + ".raw",
       template = Discourse.__container__.lookup('template:' + templateName),
       params = options.hash;
